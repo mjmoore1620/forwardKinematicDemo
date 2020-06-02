@@ -1,7 +1,7 @@
 class Arm {
-    constructor(x = 0, y = 0, length = 100, angle = 0) {
-        this.x = x;
-        this.y = y;
+    constructor(length = 100, angle = 0) {
+        this.x = 0;
+        this.y = 0;
         this.length = length;
         this.angle = angle;
         this.parent = null;

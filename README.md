@@ -16,9 +16,10 @@
 * I should build a foundation for learning the more complex inverse kinematics algorithms
 
 # What have I got from doing this so far?
-* What am I actually getting from actually doing it
 * Trig functions review
     * How to get the x2,y2 of line with only x1,y1 + angle
+* Used new git command: git reset HEAD filename
+    * to unstage a file that I didn't want to be part of the commit
 
 # Thoughts
 * The mathematical and engineering formality is way overkill in the wikipedia documentation
@@ -35,7 +36,7 @@
 
 # Issues
 * I suck at trig apparently
-* Need to implement 2 canvases to reproduce [Coding math][4] style demo
+* Need to implement 2 canvases to reproduce [Coding math part 1][4] style demo
     * Requires instance mode if using p5.js
     * Might just use base javascript
 
@@ -48,13 +49,13 @@
 1. <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)
 2. <https://en.wikipedia.org/wiki/Forward_kinematics> (Forward kinematics)
 3. <https://en.wikipedia.org/wiki/Inverse_kinematics> (Inverse kinematics)
-4. <https://www.youtube.com/watch?v=WHn2ouKKSfs&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3&t=0s> (Coding math)
+4. <https://www.youtube.com/watch?v=WHn2ouKKSfs&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3&t=0s> (Coding math part 1)
 5. <https://www.youtube.com/watch?v=xXjRlEr7AGk&feature=youtu.be> (Coding train video)
 6. <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
 
 [1]: <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)
 [2]: <https://en.wikipedia.org/wiki/Forward_kinematics> (Forward kinematics)
 [3]: <https://en.wikipedia.org/wiki/Inverse_kinematics> (Inverse kinematics)
-[4]: <https://www.youtube.com/watch?v=WHn2ouKKSfs&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3&t=0s> (Coding math)
+[4]: <https://www.youtube.com/watch?v=WHn2ouKKSfs&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3&t=0s> (Coding math part 1)
 [5]: <https://www.youtube.com/watch?v=xXjRlEr7AGk&feature=youtu.be> (Coding train video)
 [6]: <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)

@@ -3,9 +3,12 @@ class fkSystem {
         this.arms = [];
         this.baseX = baseX;
         this.baseY = baseY;
+        this.phase = 0;
+        this.speed = 0.07;
     }
 
-    add(arm) {
+    add(length, centerAngle, rotationRange, phaseOffset) {
+        let arm = new Arm(length, centerAngle, rotationRange, phaseOffset);
         if (this.arms.length > 0) {
             arm.parent = this.arms[this.arms.length - 1];
             this.arms.push(arm);
@@ -16,9 +19,15 @@ class fkSystem {
         }
     }
 
+    rotateArm(index, angle) {
+        this.arms[index].angle = angle;
+    }
+
     show() {
         for (let i = 0; i < this.arms.length; i++) {
+            this.arms[i].setPhase(this.phase);
             this.arms[i].show();
         }
+        this.phase += this.speed;
     }
 }

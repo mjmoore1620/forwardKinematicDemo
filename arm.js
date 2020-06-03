@@ -1,10 +1,17 @@
 class Arm {
-    constructor(length = 100, angle = 0) {
+    constructor(length = 100, centerAngle = 0, rotationRange = Math.PI / 4, phaseOffset = 0) {
         this.x = 0;
         this.y = 0;
         this.length = length;
-        this.angle = angle;
+        this.angle = 0;
+        this.centerAngle = centerAngle;
+        this.rotationRange = rotationRange;
         this.parent = null;
+        this.phaseOffset = phaseOffset;
+    }
+
+    setPhase(phase) {
+        this.angle = this.centerAngle + Math.sin(phase + this.phaseOffset) * this.rotationRange;
     }
 
     getEndX() {

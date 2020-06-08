@@ -16,9 +16,9 @@ class fkSystem {
         }
     }
 
-    show() {
+    show(context) {
         for (let i = 0; i < this.arms.length; i++) {
-            this.arms[i].show();
+            this.arms[i].show(context);
         }
     }
 }

@@ -1,10 +1,12 @@
 # Forward Kinematics Demo
-* Based on/inspired by [Coding train video][5]
+* Based on/inspired by [Coding train video][5], [Coding math kinematic series][4]
 
 # Progress
 * Started: 5/28/2020
-* Milestone:
-* Finished: 
+* Milestone: Completed [Coding math part 1 demo][4]
+* Milestone: Completed [Coding math part 2 demo][7]
+* Milestone: Refactored [Coding math part 1 demo][4] from p5.js to generic javascript in 'wildKinematicChain' branch
+* Finished: 6/8/2020, moving on to inverse kinematics
 
 # What is the purpose of this exercise?
 * Demonstrate forward kinematics
@@ -18,8 +20,15 @@
 # What have I got from doing this so far?
 * Trig functions review
     * How to get the x2,y2 of line with only x1,y1 + angle
-* Used new git command: git reset HEAD filename
-    * to unstage a file that I didn't want to be part of the commit
+* Used new git commands: 
+    * git reset HEAD filename
+        * to unstage a file that I didn't want to be part of the commit
+    * git stash save "save message"
+        * to save uncommitted changes so I can switch to another branch
+    * git commit --amend 
+        * add to the last commit instead of creating a new one
+        * easy way to alter last commit message
+* Learned how to animate with generic javascript
 
 # Thoughts
 * The mathematical and engineering formality is way overkill in the wikipedia documentation
@@ -52,6 +61,7 @@
 4. <https://www.youtube.com/watch?v=WHn2ouKKSfs&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3&t=0s> (Coding math part 1)
 5. <https://www.youtube.com/watch?v=xXjRlEr7AGk&feature=youtu.be> (Coding train video)
 6. <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
+7. <https://www.youtube.com/watch?v=4oCo1j8xGew&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3> (Coding math part 2)
 
 [1]: <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)
 [2]: <https://en.wikipedia.org/wiki/Forward_kinematics> (Forward kinematics)
@@ -59,3 +69,4 @@
 [4]: <https://www.youtube.com/watch?v=WHn2ouKKSfs&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3&t=0s> (Coding math part 1)
 [5]: <https://www.youtube.com/watch?v=xXjRlEr7AGk&feature=youtu.be> (Coding train video)
 [6]: <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
+[7]: <https://www.youtube.com/watch?v=4oCo1j8xGew&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3> (Coding math part 2)

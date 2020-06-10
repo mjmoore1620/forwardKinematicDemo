@@ -48,6 +48,9 @@
 * Need to implement 2 canvases to reproduce [Coding math part 1][4] style demo
     * Requires instance mode if using p5.js
     * Might just use base javascript
+* I want to keep a version of all the demos: tracing, run cycle, tentacle
+    * I'm going to make each sketch its own page
+    * Going to try [to merge 1 file at a time][8]
 
 # Specifications
 * On completion of forward kinematics demo, fork repo to start inverse kinematics project
@@ -62,6 +65,7 @@
 5. <https://www.youtube.com/watch?v=xXjRlEr7AGk&feature=youtu.be> (Coding train video)
 6. <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
 7. <https://www.youtube.com/watch?v=4oCo1j8xGew&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3> (Coding math part 2)
+8. <https://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/> (How to merge specific files)
 
 [1]: <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)
 [2]: <https://en.wikipedia.org/wiki/Forward_kinematics> (Forward kinematics)
@@ -70,3 +74,4 @@
 [5]: <https://www.youtube.com/watch?v=xXjRlEr7AGk&feature=youtu.be> (Coding train video)
 [6]: <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
 [7]: <https://www.youtube.com/watch?v=4oCo1j8xGew&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3> (Coding math part 2)
+[8]: <https://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/> (How to merge specific files)

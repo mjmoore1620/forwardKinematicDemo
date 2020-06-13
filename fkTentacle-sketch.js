@@ -8,24 +8,33 @@ let bottomPhaseOffset;
 let topCenter;
 let bottomCenter;
 
-function setup() {
-	createCanvas(800, 600);
-	background(51);
+window.onload = function () {
+    var canvas = document.getElementById("canvas"),
+        context = canvas.getContext("2d"),
+        width = canvas.width = 800,
+        height = canvas.height = 600;
 
-	//initialize linkage system
-	tentacle = new fkSystem(width / 2, height);
-	tentacle.speed = .03;
-	segmentCount = 150;
+    //initialize linkage system
+    tentacle = new fkSystem(width / 2, height);
+    tentacle.speed = .03;
+    segmentCount = 150;
 
-	// add segments
-	tentacle.add(4,  -1 * Math.PI / 2, random(-1 * Math.PI / 20, Math.PI / 20), random(Math.PI));
-	for (let i = 0; i < segmentCount; i++) {
-		tentacle.add(2, 0, random(-1 * Math.PI, Math.PI) / (segmentCount / 15), random(Math.PI));
-	}
+    // add segments
+    tentacle.add(4, -1 * Math.PI / 2, getRnd(-1 * Math.PI / 20, Math.PI / 20), getRnd(0, Math.PI));
+    for (let i = 0; i < segmentCount; i++) {
+        tentacle.add(2, 0, getRnd(-1 * Math.PI, Math.PI) / (segmentCount / 15), getRnd(0, Math.PI));
+    }
+
+    draw();
+
+    function draw() {
+        context.clearRect(0, 0, width, height);
+        tentacle.show(context);
+
+        requestAnimationFrame(draw);
+    }
 }
 
-function draw() {
-	background(51);
-
-	tentacle.show();
+function getRnd(min, max) {
+    return (Math.random() * (max - min)) + min;
 }

@@ -41,10 +41,14 @@ class Arm {
         }
     }
 
-    show() {
+    show(context) {
         this.update();
-        stroke(255);
-        line(this.x, this.y, this.getEndX(), this.getEndY());
+        context.strokeStyle = "#000000";
+        context.lineWidth = 5;
+        context.beginPath();
+        context.moveTo(this.x, this.y);
+        context.lineTo(this.getEndX(), this.getEndY());
+        context.stroke();
     }
 
 }

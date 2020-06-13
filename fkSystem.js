@@ -23,10 +23,10 @@ class fkSystem {
         this.arms[index].angle = angle;
     }
 
-    show() {
+    show(context) {
         for (let i = 0; i < this.arms.length; i++) {
             this.arms[i].setPhase(this.phase);
-            this.arms[i].show();
+            this.arms[i].show(context);
         }
         this.phase += this.speed;
     }

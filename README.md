@@ -3,7 +3,7 @@
 
 # Progress
 * Started: 5/28/2020
-* Milestone: Completed [Coding math part 1 demo][4] 
+* Milestone: Completed [Coding math part 1 demo][4]
 * Milestone: Completed [Coding math part 2 demo][7]
 * Milestone: Refactored [Coding math part 1 demo][4] from p5.js to generic javascript in 'wildKinematicChain' branch
 * Finished: 6/8/2020, moving on to inverse kinematics

@@ -8,6 +8,7 @@ class Arm {
         this.rotationRange = rotationRange;
         this.parent = null;
         this.phaseOffset = phaseOffset;
+        this.usePhase = true;
     }
 
     setPhase(phase) {

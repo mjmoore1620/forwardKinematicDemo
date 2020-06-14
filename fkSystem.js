@@ -25,7 +25,9 @@ class fkSystem {
 
     show(context) {
         for (let i = 0; i < this.arms.length; i++) {
-            this.arms[i].setPhase(this.phase);
+            if (this.arms[i].usePhase) {
+                this.arms[i].setPhase(this.phase);
+            }
             this.arms[i].show(context);
         }
         this.phase += this.speed;

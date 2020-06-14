@@ -63,6 +63,7 @@
 * On completion of forward kinematics demo, fork repo to start inverse kinematics project
 
 # Possible Modifications
+* new fkTrace feature: on clicking canvas change background color 
 
 # References
 1. <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)

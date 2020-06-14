@@ -7,6 +7,8 @@
 * Milestone: Completed [Coding math part 2 demo][7]
 * Milestone: Refactored [Coding math part 1 demo][4] from p5.js to generic javascript in 'wildKinematicChain' branch
 * Finished: 6/8/2020, moving on to inverse kinematics
+* Decided to reorganize the project 
+    * Milestone: Refactored [Coding math part 2 demo][7] and [coding train part 1 demo][5] from p5.js to generic javascript and merged Coding math part 1,2, and the coding train demo
 
 # What is the purpose of this exercise?
 * Demonstrate forward kinematics
@@ -28,6 +30,10 @@
     * git commit --amend 
         * add to the last commit instead of creating a new one
         * easy way to alter last commit message
+    * git rebase
+        * caused a mess
+            * aborted, and git merged and it went through like a normal fast-forward should
+* Got a lot of practice with git merge, managing and deleting branches
 * Learned how to animate with generic javascript
 
 # Thoughts
@@ -35,6 +41,7 @@
     * [Coding math][4] made a working demo seem very simple and straight-forward
 * My useful knowledge of trig is very lacking
     * Need to practice practical application
+* git rebase caused a mess that git merge didn't have issues with, I have no idea why
 
 # Keywords
 * kinematic chain/linkage system/linkages: a series of rigid bodies connected by joints

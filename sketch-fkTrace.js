@@ -39,12 +39,10 @@ window.onload = function () {
     fk.arms[3].angle = fk.phase * -3;
     fk.show(context1);
 
-    context2.lineWidth = .25;
+    context2.lineWidth = .6;
     draw();
 
     function draw() {
-        console.log('hiya');
-
         context2.beginPath();
         context2.moveTo(lastarm.getEndX(), lastarm.getEndY());
 

@@ -45,7 +45,7 @@ class Arm {
     show(context) {
         this.update();
         context.strokeStyle = "#000000";
-        context.lineWidth = 5;
+        context.lineWidth = 1;
         context.beginPath();
         context.moveTo(this.x, this.y);
         context.lineTo(this.getEndX(), this.getEndY());

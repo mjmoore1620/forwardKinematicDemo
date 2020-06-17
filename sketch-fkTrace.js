@@ -65,6 +65,19 @@ window.onload = function () {
 
         requestAnimationFrame(draw);
     }
+
+    document.getElementById("canvas2").addEventListener("click", swapBackground);
+}
+
+/**
+ * Swap background color between black and white on element clicked.
+ */
+swapBackground = function() {
+    if (document.body.style.backgroundColor == "black") {
+        document.body.style.backgroundColor = "white";
+    } else {
+        document.body.style.backgroundColor = "black";
+    }
 }
 
 /**

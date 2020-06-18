@@ -9,6 +9,8 @@
 * Finished: 6/8/2020, moving on to inverse kinematics
 * Decided to reorganize the project 
     * Milestone: Refactored [Coding math part 2 demo][7] and [coding train part 1 demo][5] from p5.js to generic javascript and merged Coding math part 1,2, and the coding train demo
+* Refactored the tentacle sketch that was using random sin values to use [perlin noise][9], really going on to inverse kinematics now, for real
+    * Also ended up making a crazy looking winding whip animation thingy: it's neat.
 
 # What is the purpose of this exercise?
 * Demonstrate forward kinematics
@@ -22,6 +24,7 @@
 # What have I got from doing this so far?
 * Trig functions review
     * How to get the x2,y2 of line with only x1,y1 + angle
+    * and more
 * Used new git commands: 
     * git reset HEAD filename
         * to unstage a file that I didn't want to be part of the commit
@@ -33,8 +36,12 @@
     * git rebase
         * caused a mess
             * aborted, and git merged and it went through like a normal fast-forward should
+    * git remote show origin
+        * to see information about a remote because I renamed the github repo
 * Got a lot of practice with git merge, managing and deleting branches
 * Learned how to animate with generic javascript
+* Renamed a github repo
+* Implemented perlin noise from an external library: [github link][9]
 
 # Thoughts
 * The mathematical and engineering formality is way overkill in the wikipedia documentation
@@ -42,6 +49,8 @@
 * My useful knowledge of trig is very lacking
     * Need to practice practical application
 * git rebase caused a mess that git merge didn't have issues with, I have no idea why
+* I couldn't find a common standard perlin noise library that seems like every one would use
+    * Do people usually write it themselves?
 
 # Keywords
 * kinematic chain/linkage system/linkages: a series of rigid bodies connected by joints
@@ -60,10 +69,13 @@
     * Going to try [to merge 1 file at a time][8]
 
 # Specifications
+* The tentacle sketch should use noise instead of random sin values
 * On completion of forward kinematics demo, fork repo to start inverse kinematics project
 
 # Possible Modifications
-* new fkTrace feature: on clicking canvas change background color 
+* new fkTrace feature: on clicking canvas, change background color
+    * done
+
 
 # References
 1. <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)
@@ -74,6 +86,7 @@
 6. <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
 7. <https://www.youtube.com/watch?v=4oCo1j8xGew&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3> (Coding math part 2)
 8. <https://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/> (How to merge specific files)
+9. <https://github.com/josephg/noisejs> (perlin noise library)
 
 [1]: <https://en.wikipedia.org/wiki/Kinematic_chain> (Kinematic chain)
 [2]: <https://en.wikipedia.org/wiki/Forward_kinematics> (Forward kinematics)
@@ -83,3 +96,4 @@
 [6]: <https://en.wikipedia.org/wiki/Trigonometric_functions> (Trig functions)
 [7]: <https://www.youtube.com/watch?v=4oCo1j8xGew&list=PL7wAPgl1JVvXZDYBPGfjvgeUQHJFWLPit&index=3> (Coding math part 2)
 [8]: <https://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/> (How to merge specific files)
+[9]: <https://github.com/josephg/noisejs> (perlin noise library)
